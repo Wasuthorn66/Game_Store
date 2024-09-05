@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div>
+            <hr>Add Game<hr>
+        </div>
+        <form action="AddnewGameServlet">
+            Name: <input type="text" name="gameName"><br/>
+            <br>
+            Type: <select name="gametype">
+                    <option value="Open World">Open World</option>
+                    <option value="Rpg">Rpg</option>
+                    <option value="Fps">Fps</option>
+                    <option value="Moba">Moba</option>
+                    <option value="Other">Other</option>
+                </select><br/>
+            <br>
+            DLC: <input type="radio" id="DLC_YES" name="gameDLC" value="Yes">
+                <label for="DLC_YES">Yes</label>
+                <input type="radio" id="DLC_NO" name="gameDLC" value="No">
+                <label for="DLC_NO">No</label><br/>
+            <br>
+            Price: <input type="text" name="gamePrice"><br/>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
